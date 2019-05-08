@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: .
+    destination: /webapps/Config
+  - source: source
+    destination: /webapps/myApp
+hooks:
+  AfterInstall:
+    - location: npm run start
+      timeout: 180
