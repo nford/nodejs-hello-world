@@ -3,6 +3,13 @@ version: 0.2
 phases:
   build:
     commands:
+      - npm install
       - npm run test
+      
+artifacts:
+  files:
+    - index.js
+    - package.json
+    - node_modules
 
 
